@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Wanjia Liang – CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Georgia, serif;
+            background: #e6e6e6;
+        }
+
+        .cv-page {
+            width: 900px;
+            max-width: 100%;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ===== TOP BLUE HEADER ===== */
+        .cv-header {
+            background: #214768;
+            /* dark blue */
+            color: #ffffff;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .name-block h1 {
+            margin: 0 0 10px;
+            font-size: 2.3rem;
+        }
+
+        .contact-list {
+            margin-top: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .contact-item img.icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .photo-wrap {
+            width: 170px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #214768;
+            background: #ffffff;
+        }
+
+        .photo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .cv-main {
+            padding: 20px 25px 35px;
+            background-color: #fbfbf2;
+        }
+
+        .columns {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 260px;
+            border: 6px solid #000000;
+            border-radius: 10px;
+            background: #fbfbf2;
+            padding: 15px 20px 20px;
+
+        }
+
+        .column div {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            margin: 0 0 14px;
+            font-size: 1.4rem;
+            font-style: italic;
+            font-weight: 1000;
+            color: #2cb80d;
+            /* green */
+            text-decoration: underline;
+        }
+
+        .role-line {
+            margin: 4px 0 6px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .role-line span:first-child {
+            font-weight: normal;
+            margin-right: 4px;
+        }
+
+        p {
+            margin: 6px 0;
+            font-size: 1.02rem;
+            line-height: 1.5;
+        }
+
+        ul {
+            margin: 6px 0 0 18px;
+            padding: 0;
+            font-size: 1.02rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 720px) {
+            .cv-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .photo-wrap {
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-page">
+        <!-- TOP HEADER -->
+        <header class="cv-header">
+            <div class="name-block">
+                <h1 style="font-size: 2.7rem; margin:0 0 20px 0">Wanjia Liang</h1>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <img src="https://thumbs.dreamstime.com/b/gmail-logo-201003176.jpg" alt="" class="icon">
+                        <span style="margin-left: 12px;">judy.liangwanjia@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://www.nicepng.com/png/detail/11-116665_free-icons-png-telephone-icon-png.png"
+                            alt="" class="icon">
+                        <span style="margin-left: 12px;">+3580468959527</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://static.vecteezy.com/system/resources/previews/015/097/135/large_2x/apartment-building-icon-outline-city-center-vector.jpg"
+                            alt="" class="icon">
+                        <span style="margin-left: 12px;">00700, Helsinki</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-wrap">
+                <img src="Profile.jpg" alt="Profile photo of Wanjia Liang">
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="cv-main">
+            <div class="columns">
+                <!-- LEFT COLUMN: WORK EXPERIENCE -->
+                <section class="column">
+                    <div class="workexperience">
+                        <h2 class="section-title">Work Experience</h2>
+
+                        <p class="role-line"><span>~</span>Office Manager</p>
+                        <p>FinBlu Safety Oy</p>
+                        <p>Jan 2025 – Oct 2025 ( 07.2025-10.2025 Unpaid leave of absence)</p>
+                        <p>
+                            Promoted to optimize workflows and resource arrangements across
+                            purchasing, warehouse, order management, and delivery.
+                        </p>
+                        <p>
+                            Planned and implemented improvement projects to reduce operational costs
+                            and enhance customer satisfaction.
+                        </p>
+
+                        <p class="role-line"><span>~</span>Customer Service</p>
+                        <p>FinBlu Safety Oy</p>
+                        <p>Mar 2024 – Dec 2024</p>
+                        <p>
+                            Managed customers’ orders from order intake to invoice settlement for 90+ customers,
+                            including sushi and Asian-style restaurants.
+                        </p>
+                        <p>
+                            Coordinated with internal teams to solve issues quickly and maintain a high service level.
+                        </p>
+                        <p class="role-line"><span>~</span>Part Time Waitress</p>
+                        <p>Sep 2023 – Mar 2024 Kimchi Tapiola</p>
+                        <p>Nov 2023 – Dec 2023 Seoul Good Lippulaiva</p>
+                        <p>Jan 2024 – Sep 2025 Itsudemo Lippulaiva</p>
+                    </div>
+                </section>
+
+                <!-- RIGHT COLUMN: EDUCATION & SKILLS -->
+                <section class="column">
+                    <div clss="education">
+                        <h2 class="section-title">Education</h2>
+                        <p>Centria University of Applied Sciences</p>
+                        <p>Bachelor of Engineering</p>
+                        <p>Business Intelligence Technology</p>
+                    </div>
+
+                    <div class="techskills">
+                        <h2 class="section-title">Tool Skills</h2>
+                        <ul>
+                            <li>Microsoft Word, Excel, PowerPoint, Outlook</li>
+                            <li>Data Analysis with Python &amp; Power BI</li>
+                            <li>UI Prototyping (Figma, ProtoPie)</li>
+                            <li>Front-end Web Development (HTML, CSS, JavaScript)</li>
+                        </ul>
+                    </div>
+                    <div class="socialskills">
+                        <h2 class="section-title">Social Skills</h2>
+                        <ul>
+                            <li>Comfortable in multicultural, global environments</li>
+                            <li>Strong coordination and organisation in group work</li>
+                        </ul>
+                    </div>
+                    <div class="languageskills">
+                        <h2 class="section-title">Language Skills</h2>
+                        <ul>
+                            <li>Chinese – Native</li>
+                            <li>English – Working Proficiency</li>
+                            <li>Finnish – Elementary Proficiency</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
