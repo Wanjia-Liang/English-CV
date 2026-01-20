@@ -28,7 +28,6 @@
         /* ===== TOP BLUE HEADER ===== */
         .cv-header {
             background: #214768;
-            /* dark blue */
             color: #ffffff;
             padding: 25px 40px;
             display: flex;
@@ -49,14 +48,14 @@
             display: flex;
             align-items: center;
             margin-bottom: 8px;
-            font-size: 1.5em;
+            font-size: 1.1rem;
             font-weight: 500;
         }
 
         .contact-item img.icon {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
         }
 
         .photo-wrap {
@@ -80,6 +79,14 @@
             background-color: #fbfbf2;
         }
 
+        .full-width-section {
+            border: 2px solid #000000;
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin-bottom: 18px;
+            background-color: #fbfbf2;
+        }
+
         .columns {
             display: flex;
             gap: 18px;
@@ -93,7 +100,6 @@
             border-radius: 10px;
             background: #fbfbf2;
             padding: 15px 20px 20px;
-
         }
 
         .column div {
@@ -101,37 +107,45 @@
         }
 
         .section-title {
-            margin: 0 0 14px;
-            font-size: 1.4rem;
+            margin: 0 0 10px;
+            font-size: 1.3rem;
             font-style: italic;
             font-weight: 1000;
             color: #2cb80d;
-            /* green */
             text-decoration: underline;
         }
 
         .role-line {
-            margin: 4px 0 6px;
+            margin: 8px 0 4px;
             font-weight: bold;
-            text-decoration: underline;
         }
 
-        .role-line span:first-child {
+        .role-company {
+            margin: 0 0 2px;
             font-weight: normal;
-            margin-right: 4px;
+            font-style: italic;
+        }
+
+        .role-dates {
+            margin: 0 0 4px;
+            font-size: 0.97rem;
         }
 
         p {
-            margin: 6px 0;
-            font-size: 1.02rem;
-            line-height: 1.5;
+            margin: 4px 0;
+            font-size: 1.0rem;
+            line-height: 1.45;
         }
 
         ul {
-            margin: 6px 0 0 18px;
+            margin: 4px 0 8px 18px;
             padding: 0;
-            font-size: 1.02rem;
-            line-height: 1.5;
+            font-size: 0.98rem;
+            line-height: 1.45;
+        }
+
+        li {
+            margin-bottom: 3px;
         }
 
         @media (max-width: 720px) {
@@ -139,10 +153,30 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 15px;
+                padding: 20px;
             }
 
             .photo-wrap {
                 align-self: center;
+                width: 140px;
+                height: 180px;
+            }
+
+            .cv-main {
+                padding: 15px 15px 30px;
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+
+            .column {
+                min-width: 100%;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -153,92 +187,166 @@
         <!-- TOP HEADER -->
         <header class="cv-header">
             <div class="name-block">
-                <h1 style="font-size: 2.7rem; margin:0 0 20px 0">Wanjia Liang</h1>
+                <h1 style="font-size: 2.7rem; margin:0 0 16px 0">Wanjia Liang</h1>
                 <div class="contact-list">
                     <div class="contact-item">
-                        <img src="https://thumbs.dreamstime.com/b/gmail-logo-201003176.jpg" alt="" class="icon">
-                        <span style="margin-left: 12px;">judy.liangwanjia@gmail.com</span>
+                        <img src="https://thumbs.dreamstime.com/b/gmail-logo-201003176.jpg" alt="" class="icon" />
+                        <span>judy.liangwanjia@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <img src="https://www.nicepng.com/png/detail/11-116665_free-icons-png-telephone-icon-png.png"
-                            alt="" class="icon">
-                        <span style="margin-left: 12px;">+3580468959527</span>
+                            alt="" class="icon" />
+                        <span>+358 046 895 9527</span>
                     </div>
                     <div class="contact-item">
                         <img src="https://static.vecteezy.com/system/resources/previews/015/097/135/large_2x/apartment-building-icon-outline-city-center-vector.jpg"
-                            alt="" class="icon">
-                        <span style="margin-left: 12px;">00700, Helsinki(Open to relocate)</span>
+                            alt="" class="icon" />
+                        <span>00700 Helsinki, Finland (Open to relocate)</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPvEMi6TToV3IiMVDuEdYBcCYdz515IIirQ&s"
+                            alt="" class="icon" />
+                        <span>Working Visa valid to 2029</span>
                     </div>
                 </div>
             </div>
 
             <div class="photo-wrap">
-                <img src="Profile.jpg" alt="Profile photo of Wanjia Liang">
+                <!-- Replace with your own local file if needed -->
+                <img src="Profile.jpg" alt="Profile photo of Wanjia Liang" />
             </div>
         </header>
 
         <!-- MAIN CONTENT -->
         <main class="cv-main">
+
+            <!-- PROFILE SUMMARY -->
+            <section class="full-width-section">
+                <h2 class="section-title">Profile</h2>
+                <p>
+                    A proactive project support and operations coordinator with experience across purchasing,
+                    warehousing, order management and delivery.
+                    Skilled in tracking material flow, maintaining documentation and coordinating with suppliers and
+                    internal teams to ensure on-time deliveries.
+                    Comfortable working in multicultural environments and handling urgent tasks under time pressure.
+                </p>
+            </section>
+
             <div class="columns">
                 <!-- LEFT COLUMN: WORK EXPERIENCE -->
                 <section class="column">
                     <div class="workexperience">
                         <h2 class="section-title">Work Experience</h2>
 
-                        <p class="role-line"><span>~</span>Office Manager</p>
-                        <p>FinBlu Safety Oy</p>
-                        <p>Jan 2025 – Oct 2025 ( 07.2025-10.2025 Unpaid leave of absence)</p>
-                        <p>
-                            Promoted to optimise workflows and resource arrangements across
-                            purchasing, warehouse, order management, and delivery.
-                        </p>
-                        <p>
-                            Planned and implemented improvement projects to reduce operational costs
-                            and enhance customer satisfaction.
-                        </p>
+                        <!-- Office Manager -->
+                        <p class="role-line">Office Manager</p>
+                        <p class="role-company">FinBlu Safety Oy</p>
+                        <p class="role-dates">Jan 2025 – Sep 2025</p>
+                        <ul>
+                            <li>
+                                Managed weekly, monthly, and quarterly operational replenishment, coordinating with
+                                suppliers across intra-EU trade and third-country imports from China.
+                            </li>
+                            <li>
+                                Coordinated cross-border and domestic (Finland) inbound logistics, tracking warehouse
+                                arrivals to ensure deliveries were completed as scheduled.
+                            </li>
+                            <li>
+                                Maintained responsibility for invoice settlement, while taking on increased
+                                responsibility for payment monitoring and follow-up on overdue receivables.
+                            </li>
 
-                        <p class="role-line"><span>~</span>Customer Service</p>
-                        <p>FinBlu Safety Oy</p>
-                        <p>Mar 2024 – Dec 2024</p>
-                        <p>
-                            Managed customers’ orders from order intake to invoice settlement for 90+ customers,
-                            including sushi and Asian-style restaurants.
-                        </p>
-                        <p>
-                            Coordinated with internal teams to solve issues quickly and maintain a high service level.
-                        </p>
-                        <p class="role-line"><span>~</span>Part Time Waitress</p>
-                        <p>Sep 2023 – Mar 2024 Kimchi Tapiola</p>
-                        <p>Nov 2023 – Dec 2023 Seoul Good Lippulaiva</p>
-                        <p>Jan 2024 – Sep 2025 Itsudemo Lippulaiva</p>
+                            <li>Designed and implemented standardized customer service workflows and guidelines to
+                                ensure service consistency and support onboarding of new team members through hands-on
+                                guidance on complex cases.
+                            </li>
+
+                        </ul>
+
+                        <!-- Customer Service -->
+                        <p class="role-line">Customer Service</p>
+                        <p class="role-company">FinBlu Safety Oy</p>
+                        <p class="role-dates">Mar 2024 – Dec 2024</p>
+                        <ul>
+                            <li>Managed the full order-to-cash process for 90+ customers, ensuring accuracy from order
+                                intake to invoice settlement.
+                            </li>
+                            <li>Acted as a key liaison between customers, warehouse teams, and logistics partners to
+                                resolve product and last-mile delivery issues.</li>
+                            <li>Coordinated delivery schedules and proactively communicated ETAs by aligning routing
+                                plans with order fulfillment progress.
+                            </li>
+                            <li>Maintained service records and handled customer issues related to products, deliveries,
+                                and invoicing, ensuring timely resolution.</li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Education -->
+                    <div class="education">
+                        <h2 class="section-title">Education</h2>
+                        <p><strong>Centria University of Applied Sciences</strong></p>
+                        <p>Bachelor of Engineering, Business Intelligence Technology</p>
+                        <p>Graduated: December 2025</p>
                     </div>
                 </section>
 
                 <!-- RIGHT COLUMN: EDUCATION & SKILLS -->
                 <section class="column">
-                    <div clss="education">
-<h2 class="section-title">Education</h2>
-<p>Centria University of Applied Sciences</p>
-<p>Bachelor of Engineering, Business Intelligence Technology</p>
-<p>Graduated: December 2025</p>
-                    </div>
 
-                    <div class="techskills">
+
+                    <!-- Procurement Skills -->
+                    <div class="procurementkills">
+                        <h2 class="section-title">Procurement Skills</h2>
+                        <ul>
+                            <li>Demand Planning: Assessment of product demand through integration of sales data,
+                                cross-functional feedback, and market signals.</li>
+                            <li>Purchase Planning: Replenishment planning with consideration of contractual terms,
+                                supplier lead times, loss control, and cost implications.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Logistics coordination Skills -->
+                    <div class="LogisticsCoordinationSkills">
+                        <h2 class="section-title">Logistics coordination Skills</h2>
+                        <ul>
+                            <li>
+                                Port pickup and last-mile delivery coordination with logistics carriers for Union goods.
+                            </li>
+                            <li>Coordination with customs brokers for customs clearance of non-Union goods, supporting
+                                compliant cross-border inbound flows.</li>
+                            <li>Logistics exception handling, including node mismatches, holiday-related scheduling
+                                constraints, and customer delivery disruptions.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Tool Skills -->
+                    <div class="toolskills">
                         <h2 class="section-title">Tool Skills</h2>
                         <ul>
-                            <li>Microsoft Word, Excel, PowerPoint, Outlook</li>
-                            <li>Data Analysis with Python &amp; Power BI</li>
-                            <li>UI Prototyping (Figma, ProtoPie)</li>
-                            <li>Front-end Web Development (HTML, CSS, JavaScript)</li>
+                            <li>
+                                Microsoft Office (Word, Excel, PowerPoint, Outlook): Daily use for documentation,
+                                reporting, and cross-functional communication.
+                            </li>
+                            <li>
+                                Data Analysis & Reporting: Python and Power BI for operational insights.
+                            </li>
                         </ul>
                     </div>
+
+                    <!-- Soft Skills -->
                     <div class="socialskills">
-                        <h2 class="section-title">Social Skills</h2>
+                        <h2 class="section-title">Soft Skills</h2>
                         <ul>
-                            <li>Comfortable in multicultural, global environments</li>
-                            <li>Strong coordination and organisation in group work</li>
+                            <li>Strong coordination and follow-up; able to keep tasks moving with multiple stakeholders.
+                            </li>
+                            <li>Fast learner with a practical, hands-on approach to new systems and procedures.</li>
                         </ul>
                     </div>
+
+                    <!-- Languages -->
                     <div class="languageskills">
                         <h2 class="section-title">Language Skills</h2>
                         <ul>
